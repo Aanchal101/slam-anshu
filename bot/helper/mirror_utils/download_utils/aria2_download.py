@@ -23,7 +23,7 @@ class AriaDownloadHelper:
             LOGGER.info('Checking File/Folder if already in Drive...')
             sname = aria2.get_download(gid).name
             if dl.getListener().isTar:
-                sname = sname + ".zip" if dl.getListener().isZip else sname + ".tar"
+                sname = f'{sname}.zip' if dl.getListener().isZip else sname + ".tar"
             if dl.getListener().extract:
                 smsg = None
             else:
@@ -70,8 +70,7 @@ class AriaDownloadHelper:
     @new_thread
     def __onDownloadStopped(self, api, gid):
         sleep(4)
-        dl = getDownloadByGid(gid)
-        if dl: 
+        if dl := getDownloadByGid(gid):
             dl.getListener().onDownloadError('Dead torrent!')
 
     @new_thread
