@@ -85,7 +85,7 @@ class MirrorListener(listeners.MirrorListeners):
                     download_dict[self.uid] = TarStatus(name, m_path, size)
                 if self.isZip:
                     pswd = self.pswd
-                    path = m_path + ".zip"
+                    path = f'{m_path}.zip'
                     LOGGER.info(f'Zip: orig_path: {m_path}, zip_path: {path}')
                     if pswd is not None:
                         subprocess.run(["7z", "a", f"-p{pswd}", path, m_path])
