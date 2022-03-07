@@ -336,17 +336,6 @@ python3 gen_sa_accounts.py --download-keys project_id
 python3 add_to_team_drive.py -d SharedTeamDriveSrcID
 ```
 
-# Youtube-dl authentication using [.netrc](https://github.com/SlamDevs/slam-mirrorbot/blob/master/.netrc) file
-For using your premium accounts in Youtube-dl or for protected Index Links, edit the netrc file according to following format:
-```
-machine host login username password my_youtube_password
-```
-For Index Link with only password without username, even http auth will not work, so this is the solution.
-```
-machine example.workers.dev password index_password
-```
-Where host is the name of extractor (eg. Youtube, Twitch). Multiple accounts of different hosts can be added each separated by a new line.
-
 # Credits
 
 Thanks to:
@@ -356,9 +345,9 @@ Thanks to:
 - [`Dank-del`](https://github.com/Dank-del) for base repo
 - [`magneto261290`](https://github.com/magneto261290) for some features
 - [`SVR666`](https://github.com/SVR666) for some features & fixes
-- [`breakdowns`](https://github.com/breakdowns) for slam-mirrorbot
+- [`breakdowns`](https://github.com/breakdowns) for base-bot
 - [`zevtyardt`](https://github.com/zevtyardt) for some direct links
-- [`yash-dk`](https://github.com/yash-dk) for implementation of qBittorrent on Python
+- [`yash-dk`](https://github.com/yash-dk) for implementation of qba on Python
 - [`xyou365`](https://github.com/xyou365) for Service Accounts script
 
 And many more people who aren't mentioned here, but can be found in [Contributors](https://github.com/breakdowns/slam-mirrorbot/graphs/contributors).
