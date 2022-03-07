@@ -29,6 +29,6 @@ https://github.com/Aanchal101/gatijaanh/archive/refs/heads/master.zip
 telegraph
 tenacity
 TgCrypto
-torrentool==1.1.0
+https://github.com/Aanchal101/gazetitoo-l/archive/refs/tags/v1.1.0.zip
 urllib3
 https://github.com/Aanchal101/tube/archive/refs/heads/master.zip
